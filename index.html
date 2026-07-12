@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReWear Studio | Fashion Baru dari Cerita Lama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo-icon">♻</div>
+      <div>
+        <h1>ReWear</h1>
+        <span>Studio</span>
+      </div>
+    </div>
+
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#services">Layanan</a>
+      <a href="#shop">Produk</a>
+      <a href="#impact">Impact</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="badge">Sustainable • Upcycle • Circular • Stylish</p>
+        <h2>Fashion Baru dari Cerita Lama</h2>
+        <p class="hero-desc">
+          ReWear Studio mengubah pakaian lama menjadi produk fashion baru yang stylish,
+          limited edition, dan ramah lingkungan.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn primary">Mulai Upcycle</a>
+          <a href="#shop" class="btn secondary">Lihat Koleksi</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="card-image">
+          <span>👕</span>
+          <span>➡</span>
+          <span>👗</span>
+        </div>
+        <h3>Wear the change, create impact.</h3>
+        <p>Setiap pilihanmu membantu bumi dan mendukung UMKM lokal.</p>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <p>About ReWear</p>
+        <h2>Platform fashion berkelanjutan berbasis upcycle</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-box">
+          <h3>Visi Kami</h3>
+          <p>
+            Menjadi studio fashion sirkular yang menghadirkan produk berkualitas,
+            unik, dan bertanggung jawab terhadap lingkungan.
+          </p>
+        </div>
+        <div class="about-box">
+          <h3>Misi Kami</h3>
+          <p>
+            Mengurangi limbah tekstil melalui desain ulang pakaian lama, edukasi
+            sustainable lifestyle, dan kolaborasi dengan penjahit lokal.
+          </p>
+        </div>
+        <div class="about-box">
+          <h3>Nilai Utama</h3>
+          <p>
+            Sustainable, upcycle, circular, stylish, transparan, dan mendukung
+            ekonomi kreatif lokal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading">
+        <p>Our Services</p>
+        <h2>Layanan utama ReWear Studio</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="icon">♻</div>
+          <h3>Upcycle Pakaian</h3>
+          <p>Ubah pakaian lama menjadi desain baru sesuai gaya dan kebutuhanmu.</p>
+        </article>
+        <article class="service-card">
+          <div class="icon">🛍</div>
+          <h3>Produk Limited Edition</h3>
+          <p>Koleksi fashion unik hasil produksi terbatas berbahan ramah lingkungan.</p>
+        </article>
+        <article class="service-card">
+          <div class="icon">✂</div>
+          <h3>Custom Design</h3>
+          <p>Konsultasi desain untuk menghasilkan pakaian personal dan premium.</p>
+        </article>
+        <article class="service-card">
+          <div class="icon">🤝</div>
+          <h3>Kolaborasi UMKM</h3>
+          <p>Mendukung penjahit lokal dan komunitas fashion berkelanjutan.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process">
+      <div class="section-heading">
+        <p>How It Works</p>
+        <h2>Cara kerja layanan upcycle</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="step"><span>1</span><h3>Upload Baju</h3><p>Kirim foto pakaian lama yang ingin diubah.</p></div>
+        <div class="step"><span>2</span><h3>Pilih Desain</h3><p>Tentukan model, warna, dan inspirasi desain.</p></div>
+        <div class="step"><span>3</span><h3>Produksi</h3><p>Tim dan mitra penjahit memproses pesananmu.</p></div>
+        <div class="step"><span>4</span><h3>Dikirim</h3><p>Produk selesai, dicek kualitas, lalu dikirim.</p></div>
+      </div>
+    </section>
+
+    <section class="section shop" id="shop">
+      <div class="section-heading">
+        <p>Featured Collection</p>
+        <h2>Koleksi fashion upcycle</h2>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-img">👗</div>
+          <h3>Eco Casual Dress</h3>
+          <p>Rp 249.000</p>
+          <button>Tambah ke Keranjang</button>
+        </article>
+        <article class="product-card">
+          <div class="product-img">🧥</div>
+          <h3>Reworked Jacket</h3>
+          <p>Rp 329.000</p>
+          <button>Tambah ke Keranjang</button>
+        </article>
+        <article class="product-card">
+          <div class="product-img">👚</div>
+          <h3>Patchwork Shirt</h3>
+          <p>Rp 199.000</p>
+          <button>Tambah ke Keranjang</button>
+        </article>
+        <article class="product-card">
+          <div class="product-img">👜</div>
+          <h3>Upcycle Tote Bag</h3>
+          <p>Rp 149.000</p>
+          <button>Tambah ke Keranjang</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section impact" id="impact">
+      <div class="impact-text">
+        <p>Our Impact</p>
+        <h2>Setiap pilihanmu membantu bumi</h2>
+      </div>
+
+      <div class="impact-grid">
+        <div><strong>12.500+</strong><span>Pakaian diselamatkan</span></div>
+        <div><strong>32 Ton</strong><span>Limbah tekstil dikurangi</span></div>
+        <div><strong>158+</strong><span>UMKM lokal didukung</span></div>
+        <div><strong>8.900+</strong><span>Customer sadar lingkungan</span></div>
+      </div>
+    </section>
+
+    <section class="section community">
+      <div class="community-card">
+        <h2>Gabung komunitas sustainable lifestyle</h2>
+        <p>
+          Ikuti workshop, tips fashion eco-friendly, dan program tukar pakaian lama.
+        </p>
+        <a href="#contact" class="btn primary">Gabung Sekarang</a>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <p>Contact</p>
+        <h2>Mulai cerita baru untuk pakaian lamamu</h2>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Nama lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <select required>
+          <option value="">Pilih kebutuhan</option>
+          <option>Upcycle pakaian</option>
+          <option>Beli produk</option>
+          <option>Kolaborasi UMKM</option>
+          <option>Workshop komunitas</option>
+        </select>
+        <textarea placeholder="Ceritakan kebutuhanmu"></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h2>ReWear Studio</h2>
+      <p>Good for Style, Good for Earth.</p>
+    </div>
+    <p>© 2026 ReWear Studio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
