@@ -26,6 +26,10 @@
       <a href="#shop">Produk</a>
       <a href="#impact">Impact</a>
       <a href="#contact">Kontak</a>
+      <div class="cart-icon" onclick="toggleCart()">
+    🛒
+    <span id="cartCount">0</span>
+</div>
     </nav>
 
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -44,16 +48,61 @@
           <a href="#services" class="btn primary">Mulai Upcycle</a>
           <a href="#shop" class="btn secondary">Lihat Koleksi</a>
         </div>
+        <div class="hero-stats">
+    <div class="stat">
+        <h3>12.5K+</h3>
+        <p>Pakaian Diselamatkan</p>
+    </div>
+
+    <div class="stat">
+        <h3>32 Ton</h3>
+        <p>Limbah Dikurangi</p>
+    </div>
+
+    <div class="stat">
+        <h3>4.9 ★</h3>
+        <p>Kepuasan Pelanggan</p>
+    </div>
+</div>
       </div>
 
       <div class="hero-card">
         <div class="card-image">
-          <span>👕</span>
-          <span>➡</span>
-          <span>👗</span>
-        </div>
+
+    <div class="flow-item">
+
+        <img src="images/denim.jpg" alt="Celana Jeans Lama">
+
+        <small>Celana Jeans</small>
+
+    </div>
+
+    <div class="flow-arrow">
+
+        ➜
+
+    </div>
+
+    <div class="flow-item">
+
+        <img src="images/totebag_2.jpg" alt="Tote Bag Jeans">
+
+        <small>Tote Bag Jeans</small>
+
+    </div>
+
+</div>
         <h3>Wear the change, create impact.</h3>
         <p>Setiap pilihanmu membantu bumi dan mendukung UMKM lokal.</p>
+        <div class="hero-features">
+
+    <span>🌿 Eco Friendly</span>
+
+    <span>🧵 Handmade</span>
+
+    <span>✨ Limited Edition</span>
+
+</div>
       </div>
     </section>
 
@@ -140,45 +189,112 @@
 
       <div class="product-grid">
         <article class="product-card">
-          <div class="product-img">👗</div>
+          <div class="product-img">
+    <img src="images/dress.jpg" alt="Eco Casual Dress">
+</div>
           <h3>Eco Casual Dress</h3>
           <p>Rp 249.000</p>
-          <button>Tambah ke Keranjang</button>
+          <button onclick="addToCart('Eco Casual Dress',249000)">
+Tambah ke Keranjang
+</button>
         </article>
         <article class="product-card">
-          <div class="product-img">🧥</div>
+          <div class="product-img">
+    <img src="images/jacket.jpg" alt="Reworked Jacket">
+</div>
           <h3>Reworked Jacket</h3>
           <p>Rp 329.000</p>
-          <button>Tambah ke Keranjang</button>
+          <button onclick="addToCart('Reworked Jacket',329000)">
+Tambah ke Keranjang
+</button>
         </article>
         <article class="product-card">
-          <div class="product-img">👚</div>
+          <div class="product-img">
+    <img src="images/shirt.jpg" alt="Patchwork Shirt">
+</div>
           <h3>Patchwork Shirt</h3>
           <p>Rp 199.000</p>
-          <button>Tambah ke Keranjang</button>
+          <button onclick="addToCart('Patchwork Shirt',199000)">
+Tambah ke Keranjang
+</button>
         </article>
         <article class="product-card">
-          <div class="product-img">👜</div>
+          <div class="product-img">
+    <img src="images/totebag.jpg" alt="Upcycle Tote Bag">
+</div>
           <h3>Upcycle Tote Bag</h3>
           <p>Rp 149.000</p>
-          <button>Tambah ke Keranjang</button>
+          <button onclick="addToCart('Upcycle Tote Bag',149000)">
+Tambah ke Keranjang
+</button>
         </article>
       </div>
     </section>
 
     <section class="section impact" id="impact">
-      <div class="impact-text">
-        <p>Our Impact</p>
-        <h2>Setiap pilihanmu membantu bumi</h2>
-      </div>
 
-      <div class="impact-grid">
-        <div><strong>12.500+</strong><span>Pakaian diselamatkan</span></div>
-        <div><strong>32 Ton</strong><span>Limbah tekstil dikurangi</span></div>
-        <div><strong>158+</strong><span>UMKM lokal didukung</span></div>
-        <div><strong>8.900+</strong><span>Customer sadar lingkungan</span></div>
-      </div>
-    </section>
+    <div class="impact-text">
+
+        <p class="section-tag">Our Impact</p>
+
+        <h2>
+            Setiap pilihanmu
+            membantu bumi.
+        </h2>
+
+        <p class="impact-desc">
+            Bersama ReWear Studio, setiap pakaian yang di-upcycle
+            membantu mengurangi limbah tekstil, mendukung UMKM lokal,
+            dan menciptakan masa depan fashion yang lebih berkelanjutan.
+        </p>
+
+    </div>
+
+    <div class="impact-grid">
+
+        <div class="impact-card">
+
+            <div class="impact-icon">🌿</div>
+
+            <strong>12.500+</strong>
+
+            <span>Pakaian Diselamatkan</span>
+
+        </div>
+
+        <div class="impact-card">
+
+            <div class="impact-icon">♻️</div>
+
+            <strong>32 Ton</strong>
+
+            <span>Limbah Tekstil Dikurangi</span>
+
+        </div>
+
+        <div class="impact-card">
+
+            <div class="impact-icon">🤝</div>
+
+            <strong>158+</strong>
+
+            <span>UMKM Lokal Didukung</span>
+
+        </div>
+
+        <div class="impact-card">
+
+            <div class="impact-icon">💚</div>
+
+            <strong>8.900+</strong>
+
+            <span>Pelanggan Peduli Lingkungan</span>
+
+        </div>
+
+    </div>
+
+</section>
 
     <section class="section community">
       <div class="community-card">
@@ -221,5 +337,34 @@
   </footer>
 
   <script src="script.js"></script>
+  <div class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+
+        <h2>Keranjang Belanja</h2>
+
+        <button onclick="toggleCart()">✕</button>
+
+    </div>
+
+    <div id="cartItems">
+
+        <p class="empty-cart">
+            Keranjang masih kosong.
+        </p>
+
+    </div>
+
+    <div class="cart-footer">
+
+        <h3>Total : <span id="cartTotal">Rp0</span></h3>
+
+        <button class="checkout-btn">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
 </body>
 </html>
